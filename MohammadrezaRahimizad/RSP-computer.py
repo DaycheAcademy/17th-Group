@@ -59,85 +59,85 @@ while True:
 
 
                         if inp.lower() == 'rock' or inp.lower() == 'r':
-                            computerChoise = random.choice(validChoices)[1]
+                            computerChoice = random.choice(validChoices)[1]
 
-                            if computerChoise == 'scissor' or computerWinscore == 's':
+                            if computerChoice == 'scissor' or computerChoice == 's':
                                 playerWinscore += 1
-                                print("I chose: ", computerChoise,
+                                print("I chose: ", computerChoice,
                                       "\nYou chose: ", inp,
                                       "\n", random.choice(playerWinMessage),
                                       "\nYour Score is: ", playerWinscore,
                                       "\nMy Score Is: ", computerWinscore)
 
-                            if computerChoise == 'paper' or computerWinscore == 'p':
+                            if computerChoice == 'paper' or computerChoice == 'p':
                                 computerWinscore += 1
-                                print("I chose: ", computerChoise,
+                                print("I chose: ", computerChoice,
                                       "\nYou chose: ", inp,
                                       "\n", random.choice(computerWinMessage),
                                       "\nYour Score is: ", playerWinscore,
                                       "\nMy Score Is: ", computerWinscore)
 
-                            if computerChoise == 'rock' or computerWinscore == 'r':
-                                print("I chose: ", computerChoise,
+                            if computerChoice == 'rock' or computerChoice == 'r':
+                                print("I chose: ", computerChoice,
                                       "\nYou chose: ", inp,
                                       "\nWe had the same choice!",
                                       "\nYour Score is: ", playerWinscore,
                                       "\nMy Score Is: ", computerWinscore)
 
                         if inp.lower() == 'paper' or inp.lower() == 'p':
-                            computerChoise = random.choice(validChoices)[1]
+                            computerChoice = random.choice(validChoices)[1]
 
-                            if computerChoise == 'rock' or computerWinscore == 'r':
+                            if computerChoice == 'rock' or computerChoice == 'r':
                                 playerWinscore += 1
-                                print("I chose: ", computerChoise,
+                                print("I chose: ", computerChoice,
                                       "\nYou chose: ", inp,
                                       "\n", random.choice(playerWinMessage),
                                       "\nYour Score is: ", playerWinscore,
                                       "\nMy Score Is: ", computerWinscore)
 
-                            if computerChoise == 'scissor' or computerWinscore == 's':
+                            if computerChoice == 'scissor' or computerChoice == 's':
                                 computerWinscore += 1
-                                print("I chose: ", computerChoise,
+                                print("I chose: ", computerChoice,
                                       "\nYou chose: ", inp,
                                       "\n", random.choice(computerWinMessage),
                                       "\nYour Score is: ", playerWinscore,
                                       "\nMy Score Is: ", computerWinscore)
 
-                            if computerChoise == 'paper' or computerWinscore == 'p':
-                                print("I chose: ", computerChoise,
+                            if computerChoice == 'paper' or computerChoice == 'p':
+                                print("I chose: ", computerChoice,
                                       "\nYou chose: ", inp,
                                       "\nWe had the same choice!",
                                       "\nYour Score is: ", playerWinscore,
                                       "\nMy Score Is: ", computerWinscore)
 
                         if inp.lower() == 'scissor' or inp.lower() == 's':
-                            computerChoise = random.choice(validChoices)[1]
+                            computerChoice = random.choice(validChoices)[1]
 
-                            if computerChoise == 'paper' or computerWinscore == 'p':
+                            if computerChoice == 'paper' or computerChoice == 'p':
                                 playerWinscore += 1
-                                print("I chose: ", computerChoise,
+                                print("I chose: ", computerChoice,
                                       "\nYou chose: ", inp,
                                       "\n", random.choice(playerWinMessage),
                                       "\nYour Score is: ", playerWinscore,
                                       "\nMy Score Is: ", computerWinscore)
 
-                            if computerChoise == 'rock' or computerWinscore == 'r':
+                            if computerChoice == 'rock' or computerChoice == 'r':
                                 computerWinscore += 1
-                                print("I chose: ", computerChoise,
+                                print("I chose: ", computerChoice,
                                       "\nYou chose: ", inp,
                                       "\n", random.choice(computerWinMessage),
                                       "\nYour Score is: ", playerWinscore,
                                       "\nMy Score Is: ", computerWinscore)
 
-                            if computerChoise == 'scissor' or computerWinscore == 's':
-                                print("I chose: ", computerChoise,
+                            if computerChoice == 'scissor' or computerChoice == 's':
+                                print("I chose: ", computerChoice,
                                       "\nYou chose: ", inp,
                                       "\nWe had the same choice!",
                                       "\nYour Score is: ", playerWinscore,
                                       "\nMy Score Is: ", computerWinscore)
 
                         if playerWinscore == winScore:
-                            print("\n\t\t\tOh no! I lost\n"
+                            print("\n\t\t\t\tOh no! I lost\n"
                                   "\t\t\tCongratulation To You\n")
                             break
                         if computerWinscore == winScore:
