@@ -39,9 +39,10 @@ def take_input():
         human_choice.append("fix the bug")
         for i in human_choice:
             if i in quite_list:
-                return 'Game is Done!We can play later, goodbye!'
+                print('ok we can play later.good bye')
+                return 'q'
             for j in human_choice_list:
-                if j == i:
+                if i == j:
                     human_choice = i     # here we take the naive input
                     if human_choice in human_choice_list[0:4]:
                         return human_choice_list[0]
@@ -50,10 +51,12 @@ def take_input():
                     else:
                         return human_choice_list[8]     # and here we make it clean
         else:
-            return 'Come on! don\'t play with me! Enter a valid choice!'
+            print('Come on! don\'t play with me! Enter a valid choice!')
+            print('================================================================')
 
 
 # defining the core functions of the game
+
 def game():
 
     computer_score = 0
@@ -63,10 +66,9 @@ def game():
         RPS = ['Rock', 'Paper', 'Scissor']
         computer_choice = choice(RPS)
         human_choice = take_input()
-        print(human_choice)
         if human_choice in quite_list:
-            return human_choice
-        if computer_choice == human_choice:
+            break
+        elif computer_choice == human_choice:
             print('that was a draw , no point for either of us')
         elif computer_choice == "Scissor":
             if human_choice == "Rock":
@@ -129,6 +131,8 @@ def game():
         print('================================================================')
 
 
+
+# we run the game from here:
 player_will = 'yes'
 
 while player_will == 'yes':
@@ -136,16 +140,18 @@ while player_will == 'yes':
     if time_play == 'q':
         print('OK we play later! good luck')
         break
-    game()
-    continue_will = input('Do you want to play again??[yes/no]')
-    yes_list = ['y', 'Y', 'Yes']
-    no_list = ['n', 'N', 'No']
-    if continue_will in no_list or continue_will in quite_list:
-        continue_will = 'No'
-    elif continue_will in yes_list:
-        continue_will = 'Yes'
     else:
-        print('you really enjoy to make fun of me:) ,say yes darling!')
+        game()
+        continue_will = input('Do you want to play again??[yes/no]').strip()
+        yes_list = ['y', 'Y', 'Yes', 'yes']
+        no_list = ['n', 'N', 'No', 'no']
+        if continue_will in no_list or continue_will in quite_list:
+            print('that was a good game! come back and play')
+            player_will = 'No'
+        elif continue_will in yes_list:
+            player_will = 'Yes'
+        else:
+            print('you really enjoy to make fun of me:) ,say yes darling!')
 
 
 
