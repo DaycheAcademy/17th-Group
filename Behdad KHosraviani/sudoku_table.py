@@ -3,6 +3,7 @@ import turtle as t
 t.hideturtle()
 t.speed(0)
 # creating 9*9 Sudoku Table
+
 t.forward(252)
 t.right(90)
 t.forward(5 * 56)
@@ -63,9 +64,8 @@ for i in range(25):
                 t.forward(504)
                 t.left(90)
 
-
-
-
+#----------------------------------------------------------------
+# creating outer line
 
 t.pensize(5)
 for i in range(4):
