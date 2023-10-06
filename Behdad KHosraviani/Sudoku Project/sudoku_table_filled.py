@@ -12,6 +12,8 @@ def random_filler():
                  font=('Arial', 15, 'normal'))
 
 
+# now we create a function to fill the cells with random numbers
+
 def fill_with_number():
     if st.validation_for_running == 1:
         turtle.up()
@@ -26,9 +28,11 @@ def fill_with_number():
         print('first draw the table')
 
 
-st.drow_soduko_table()
-print(turtle.position())
+if __name__ == '__main__':
 
-fill_with_number()
+    st.drow_soduko_table()
+    print(turtle.position())
 
-turtle.done()
+    fill_with_number()
+
+    turtle.done()
