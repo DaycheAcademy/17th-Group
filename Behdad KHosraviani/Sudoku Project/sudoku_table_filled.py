@@ -6,7 +6,7 @@ import sudoku_table as st
 # first we need a function to  generate random numbers from 1 to 10
 
 def random_filler():
-    num = random.randint(1, 11)
+    num = random.randint(1, 9)
     turtle.write(num,
                  move=False, align='center',
                  font=('Arial', 15, 'normal'))
